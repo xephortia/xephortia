@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xephortia | Gov Support</title>
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Government Header -->
+    <div id="site-header"></div>
+
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+
+        <div class="breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <span>›</span>
+
+            <span class="current">Government Support</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Government Support Page -->
+    <section class="services-page">
+
+        <div class="services-layout">
+
+            <main class="services-content">
+
+                <h1>Government Support</h1>
+
+                <p class="intro">
+                    Need assistance from the Xephortian Government? You can contact Government Support
+                    by these methods during the hours listed below.
+                </p>
+
+
+                <section>
+
+                    <h2>Government Support Email</h2>
+
+                    <p>
+                        <strong>Email:</strong>
+                          <a href="mailto:xephortia@gmail.com">xephortia@gmail.com</a>.
+                    </p>
+
+                    <p>
+                        Emails are available <strong>24 hours a day from Monday to Thursday</strong>,
+                        however please note the service is operated from the British/Irish Standard Time zones (named Xephortian Standard Time).
+                    </p>
+
+                </section>
+
+
+                <section>
+
+                    <h2>Exceptions</h2>
+
+                    <p>
+                        <strong>Weekends:</strong> Friday to Sunday
+                    </p>
+
+                    <p>
+                        Your email may not be answered during days listed. If you need to contact in an emergency during these days, please contact via email or go to Xephortia's discord server for further assistance.
+                    </p>
+
+                </section>
+</a>
+
+<div class="feedback-card" id="feedbackCard">
+
+    <div class="feedback-content">
+
+        <h3>Did you find this page helpful?</h3>
+
+        <p>
+            Help us improve Xephortia eGov by sharing your feedback.
+            You can also
+            <a href="mailto:xephortia@gmail.com">contact us</a>.
+        </p>
+
+    </div>
+
+    <div class="feedback-buttons">
+
+        <button id="thumbUp" class="feedback-btn">
+
+            👍
+
+        </button>
+
+        <button id="thumbDown" class="feedback-btn">
+
+            👎
+
+        </button>
+
+     </div>
+
+</div>
+
+</main>
+
+</div>
+
+</section>
+
+
+
+    <!-- Government Footer -->
+    <div id="footer"></div>
+
+<script>
+
+/* ==========================
+   PAGE FEEDBACK
+========================== */
+
+const card = document.getElementById("feedbackCard");
+const up = document.getElementById("thumbUp");
+const down = document.getElementById("thumbDown");
+
+function submitFeedback(){
+
+    card.classList.add("feedback-success");
+
+    card.innerHTML = `
+
+        <div class="feedback-content">
+
+            <h3>Thank you for your feedback!</h3>
+
+            <p>
+                We appreciate your feedback. Your response helps us
+                improve the quality and accessibility of Xephortia eGov services.
+            </p>
+
+        </div>
+
+        <div class="feedback-check">
+            ✓
+        </div>
+
+    `;
+}
+up.addEventListener("click", submitFeedback);
+down.addEventListener("click", submitFeedback);
+ 
+</script>
+
+<script src="js/component-loader.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
